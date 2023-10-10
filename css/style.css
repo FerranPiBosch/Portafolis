@@ -1,24 +1,31 @@
+body{
+    background-color: rgb(5, 5, 23);
+    color:rgb(220, 218, 218);
+}
 header{
-    height: 180px;
-    background-image: url(../media/imgorange5);
     display: flex;
-    align-items:end;
-    justify-content: end;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    justify-content: space-between;
 }
-#botonera{
-    width: 60%;
+main{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 25px;
     display: flex;
-    justify-content: space-around;
-    
+    align-items: center;
 }
-#boton1{
-    background-color: rgba(249, 103, 5, 0.854);
-    border-radius: 5px;
-    border-width: 0px;
-    width: fit-content;
-    height: max-content;
-    margin: 1%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:medium;
-    color: rgba(206, 200, 200, 0.954);
+.retrato{
+    width: 50%;
+    max-width: 500px;
+    margin-right: 10%;
+}
+section{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+
 }
