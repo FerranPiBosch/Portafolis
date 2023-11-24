@@ -74,22 +74,28 @@ h2{
 }
 /* Disseny pàgina de projectes */
 .anidada-main{
-    display: flex;
-    flex-direction: column;
-}
-.projectes-box{
-    width: 80%;
-    margin: 35px;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+.projectes-box{
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px 15px;
     margin-top: 20px;
 }
 .projectes-img{
     border-radius: 15px 15px;
-    margin: 10px;
-    max-width: 350px;
-
+    display: block;
+    margin: auto;
+    max-width: 70%;
+}
+.titol-pag{
+    width: fit-content;
+    margin: auto;
 }
 /* .div-titulo{
     display: flex;
@@ -100,11 +106,12 @@ h2{
 .projecte-titol{
     width: 70%;
     margin-left: 50px;
-    text-align: left;
+    text-align: center;
 }
 .projectes-text{
     margin-left: 50px;
     width: 70%;
+   text-align: center;
 }
 .projectes-box:hover{
     background-color:rgb(29, 35, 47);
