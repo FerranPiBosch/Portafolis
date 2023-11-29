@@ -38,6 +38,8 @@ section{
 }
 a{
     text-decoration: none;
+    color: white;
+    text-shadow: 2px black;
 }
 /* format imatges inferiors */
 .imgenlace{
@@ -75,6 +77,8 @@ h2{
 /* Disseny pàgina de projectes */
 .anidada-main{
     width: 90%;
+    max-width: 1300px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,6 +100,8 @@ h2{
 .titol-pag{
     width: fit-content;
     margin: auto;
+    margin-bottom: 30px;
+    
 }
 /* .div-titulo{
     display: flex;
@@ -123,6 +129,7 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 60%;
+    margin: auto;
     margin-top: 30px;
 }
 i{
