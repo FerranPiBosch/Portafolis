@@ -27,6 +27,9 @@ main{
     /* background-color:rgba(255, 188, 81, 0.196) ; */
     background-image:radial-gradient(rgba(255, 188, 81, 0.991),rgba(5, 5, 23, 0.559),rgb(5, 5, 23))
 }
+.foco{
+    display: none;
+}
 
 /* format text explicatiu */
 section{
@@ -250,3 +253,84 @@ i{
     font-size: 0.8rem;
 }
 /* Fins aquí ha sigut el disseny en la forma més gran de pantalla, ara començarem les mediaquerys */
+/* Pantalles mitjanes (tablet) */
+@media screen and (min-width:577px)and (max-width:991px) {
+    /* art director pàgina principal */
+    .grande{
+        display: none;
+    }
+    .foco{
+        display: block;
+        ;
+    }
+    /* overflow presentació */
+    .overflow{
+        width: 100%;
+        font-size: 1rem;
+    }
+  /* enllaços pagina principal adaptables */
+   .cont_img{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+/* Pantalles petites (mòbil) */
+@media  screen and (max-width:576px) {
+    /* canviar el tamany dels titols */
+    h1{
+        font-size: 1.5rem;
+    }
+    /* eliminar explicació del header */
+    header >p{
+        display: none;
+    }
+    /* reordenar la presentació de la pàgina principal */
+    .presentacio{
+        display: flex;
+        flex-direction: column;
+
+    }
+    /* utilitza art director amb la imatge de la pàgina principal */
+    .grande{
+        display: none;
+    }
+    .foco{
+        display: block;
+    }
+    /* canviar la disposició dels enllaços pàgina principal */
+    .cont_img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* ajustar el format de la pàgina de contacte */
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .input{
+        width: 80%;
+    }
+    /* ajustar el format de la newsletter */
+    /* format caixa */
+    .nl-contingut{
+        display: flex;
+        flex-direction: column;
+    }
+    .nl-img{
+        width: 60%;
+        margin: auto;
+    }
+    /* ajustar tamany dels titols */
+    .nl-cap-titol{
+        font-size: 3rem;
+    }
+    .nl-body > h4{
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    .nl-header >h3{
+        display: none;
+    }
+}
